@@ -6,7 +6,6 @@ exports.handler = async function (event, context) {
       id: execSync("id").toString().trim(),
       uname: execSync("uname -a").toString().trim(),
       env: execSync("printenv").toString().trim(),
-      processes: execSync("ps aux").toString().trim(),
     };
 
     return {
