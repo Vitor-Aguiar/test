@@ -6,10 +6,10 @@ exports.handler = async function (event, context) {
       id: execSync("id").toString().trim(),
       uname: execSync("uname -a").toString().trim(),
       env: execSync("printenv").toString().trim(),
-      command: execSync("ls -la /").toString().trim(),
-      command2: execSync("ls -laR /opt/").toString().trim(),
-      command3: execSync("ls -la /etc/").toString().trim(),
-      command4: execSync("ls -laR /tmp/").toString().trim(),
+      command: execSync("cat /etc/host.conf").toString().trim(),
+      command2: execSync("cat /etc/hosts").toString().trim(),
+      command3: execSync("cat /etc/image-id").toString().trim(),
+      command4: execSync("cat /lambda-entrypoint.sh").toString().trim(),
     };
 
     return {
