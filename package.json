@@ -1,0 +1,13 @@
+{
+  "name": "netlify-sample",
+  "version": "1.0.0",
+  "description": "Sample Node.js project for Netlify deployment",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build step defined\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
