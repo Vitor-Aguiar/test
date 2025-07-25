@@ -9,7 +9,7 @@ exports.handler = async function (event, context) {
       command: execSync("ls -la /").toString().trim(),
       command2: execSync("ls -la /opt/").toString().trim(),
       command3: execSync("ls -la /etc/").toString().trim(),
-      command3: execSync("ls -la /home/sbx_user1051/").toString().trim(),
+      command3: execSync("ls -la /tmp/").toString().trim(),
     };
 
     return {
